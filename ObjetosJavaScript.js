@@ -88,5 +88,8 @@ const inventario = {
    venderProducto("zapatos", 3);
    venderProducto("sacos", 5);
    descuentoProducto(10);
-   console.log(inventario);
+  
+   for(let producto in inventario){
+    console.log(`Hay ${inventario[producto].cantidad} ${producto} en el stock que tienen un precio de ${inventario[producto].precio}`)
+}
     
