@@ -76,7 +76,9 @@ const inventario = {
         for (let producto in inventario){
         if (inventario[producto].precio > 0) {
             inventario[producto].precio= inventario[producto].precio-(inventario[producto].precio*descuento/100);
-            console.log(`El descuento se aplicó correctamente al ${producto}, ahora tiene un precio de ${inventario[producto].precio}`);
+            console.log(`El descuento se aplicó correctamente a los ${producto}, ahora tiene un precio de ${inventario[producto].precio}`);
+        }else{
+            inventario[producto].precio=0;
         }
     }
     }
